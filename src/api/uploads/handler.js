@@ -21,7 +21,7 @@ class UploadsHandler {
         message: 'Gambar berhasil diunggah',
         data: {
           // Menyimpan di local storage
-          pictureUrl: `http://${process.env.HOST}:${process.env.PORT}/upload/picturess/${filename}`,
+          pictureUrl: `http://${process.env.HOST}:${process.env.PORT}/upload/pictures/${filename}`,
           // pictureUrl,
         },
       });

@@ -57,7 +57,7 @@ const init = async () => {
   const usersService = new UsersService();
   const authenticationsService = new AuthenticationsService();
   // Menyimpan di local storage
-  const storageService = new StorageService(path.resolve(__dirname, 'api/uploads/file/images'));
+  const storageService = new StorageService(path.resolve(__dirname, 'api/uploads/file/pictures'));
   // const storageService = new StorageService();
 
   const server = Hapi.server({
