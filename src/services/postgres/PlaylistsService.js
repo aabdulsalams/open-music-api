@@ -79,7 +79,8 @@ class SongsService {
     const query = {
       text: `SELECT songs.id, songs.title, songs.performer 
       FROM songs
-      LEFT JOIN playlistsongs ON songs.id = playlistsongs.song_id
+      JOIN playlistsongs ON songs.id = playlistsongs.song_id 
+      JOIN playlists ON playlistsongs.playlist_id = playlists.id 
       WHERE playlists.id = $1
       GROUP BY songs.id`,
       values: [id],
